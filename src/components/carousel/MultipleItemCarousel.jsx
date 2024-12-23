@@ -2,7 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import { Link } from 'react-router-dom';
+import products from '../../index';
 
 
 
@@ -84,16 +85,19 @@ const MultipleItemCarousel = () => {
     return (
       <div className='slider-container bg-[#d3f3d5] p-5'>
       <Slider {...settings}>
-        {slides.map((slide, index) => (
-          <div className='border-solid border-2 border-black rounded-md p-6' key={index}>
-            <img className='w-60 h-44 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1  hover:translate-x-1 hover:scale-110 duration-300' src={slide.img} alt={slide.altText} />
+        {slides.map((slide, index) => (          
+          <div className='border-solid border-2 border-black rounded-md p-6' key={index}>  
+          <Link to="/productDetails">
+            <img className='w-60 h-44 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1  hover:translate-x-1 hover:scale-110 duration-300' src={slide.img} alt={slide.altText} />  
             <div className='px-4 text-center '>
               <h1 className='font-medium text-lg'>{slide.name}</h1>
               <h2 className='font-medium'>Ratings: {slide.rating}</h2>
               <h1 className='text-red-600 font-extrabold text-lg'>Rs. {slide.price}/-</h1>
               <button className='border-solid border-2 border-black rounded-md p-2 bg-orange-400 hover:bg-orange-500 mt-1'>Add to cart</button>
             </div>
+            </Link>
           </div>
+          
         ))}
       </Slider>
       </div>
