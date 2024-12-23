@@ -27,7 +27,7 @@ function Cart() {
 
       <ul className='grid grid-cols-1 md:grid-cols-4 gap-5 border-solid border-y-2 border-black items-center py-3'>
         <li className='flex items-center'>
-          <img className='w-full h-40 p-2' src="/public/hero_product_2.jpg" alt="productImg" />
+          <img className='w-full h-40 p-2' src="/hero_product_2.jpg" alt="productImg" />
           <div>
             <p>Lorem, ipsum dolor.</p>
             <p>Lorem ipsum dolor sit amet.</p>
