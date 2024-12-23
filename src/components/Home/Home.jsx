@@ -16,7 +16,7 @@ export default function Home() {
 
             <div className='mt-5'>
                 <h1 className='text-2xl p-4'>Shop By Category</h1>
-                <li className='flex flex-row gap-44 justify-center pb-5 pt-2'>
+                <li className='md:flex md:flex-row md:gap-44 md:justify-center pb-5 pt-2 flex flex-col items-center gap-10'>
                     <ul><img className='w-40 h-36 border-black rounded-full text-center font-extrabold hover:blur-sm' src="/category_1.jpg" alt="" /></ul>
                     <ul><img className='w-40 h-36 border-black rounded-full hover:blur-sm' src="/category_2.jpg" alt="" /></ul>
                     <ul><img className='w-40 h-36 border-black rounded-full hover:blur-sm' src="/category_3.jpg" alt="" /></ul>

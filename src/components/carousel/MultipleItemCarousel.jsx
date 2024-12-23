@@ -88,7 +88,7 @@ const MultipleItemCarousel = () => {
         {slides.map((slide, index) => (          
           <div className='border-solid border-2 border-black rounded-md p-6' key={index}>  
           <Link to="/productDetails">
-            <img className='w-60 h-44 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1  hover:translate-x-1 hover:scale-110 duration-300' src={slide.img} alt={slide.altText} />  
+            <img className='md:w-60 w-full md:h-44 h-60 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1  hover:translate-x-1 hover:scale-110 duration-300' src={slide.img} alt={slide.altText} />  
             <div className='px-4 text-center '>
               <h1 className='font-medium text-lg'>{slide.name}</h1>
               <h2 className='font-medium'>Ratings: {slide.rating}</h2>

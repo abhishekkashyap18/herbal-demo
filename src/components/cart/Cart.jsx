@@ -16,21 +16,21 @@ function Cart() {
 
 
   return (
-    <div className='container mx-auto text-center bg-[#e5f4e6] text-black p-5'>
+    <div className='container mx-auto text-center bg-[#e5f4e6] text-black md:p-5 p-2 '>
       <h1 className='font-extrabold text-2xl p-2'>Your Cart - 4 Items</h1>
-      <ul className='grid grid-cols-1 md:grid-cols-4 gap-5 border-solid border-y-2 border-black  p-3'>
+      <ul className='grid grid-cols-4 gap-5 border-solid border-y-2 border-black  p-3'>
         <li>Item</li>
         <li>Price</li>
         <li>Quantity</li>
         <li>Total</li>
       </ul>
 
-      <ul className='grid grid-cols-1 md:grid-cols-4 gap-5 border-solid border-y-2 border-black items-center py-3'>
-        <li className='flex items-center'>
-          <img className='w-full h-40 p-2' src="/hero_product_2.jpg" alt="productImg" />
+      <ul className='grid grid-cols-4 gap-5 border-solid border-y-2 border-black items-center py-2'>
+        <li className='md:flex items-center'>
+          <img className='md:w-full md:h-40 p-1' src="/hero_product_2.jpg" alt="productImg" />
           <div>
-            <p>Lorem, ipsum dolor.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p className='md:text-base text-xs'>Lorem, ipsum dolor.</p>
+            <p className='md:text-base text-xs'>Lorem ipsum dolor sit amet.</p>
           </div>
         </li>
         <li>$4299</li>
@@ -39,8 +39,10 @@ function Cart() {
           <p className='items-center'>{itemCount}</p>
           <p onClick={incrementItemCount} className='hover:cursor-pointer'>+</p>
         </li>
-        <li>$4299</li>
+        <li className='font-bold'>$4299</li>
       </ul>
+
+      <button className='border-solid border-2 border-black rounded-md p-2 mt-3 bg-[#18841e] hover:bg-[#146f18]'>CheckOut</button>
     </div>
   );
 }
